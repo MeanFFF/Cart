@@ -20,6 +20,7 @@ public class UserLoginServlet extends HttpServlet {
             req.getSession().setAttribute("user", user);
             req.getRequestDispatcher("/listProduct").forward(req,resp);
         }else{
+            System.out.println("hellohello");
             resp.sendRedirect("login.jsp");
         }
     }
